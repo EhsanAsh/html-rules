@@ -20,7 +20,9 @@
         <p style=" color:bisque;"></p>
         <p style="background-color: bisque;"></p>
         <!--The style attribute specifies an inline style for an element.-->
-        <p title="I'm a Tooltip.">Mouse over this paragraph, to display the title attribute as a tooltip</p>
+        <p style="border-color:aliceblue;"></p>
+        <!--The border-color property sets the color of an element's four borders.-->
+        <p title="I'm a Tooltip">Mouse over this paragraph, to display the title attribute as a tooltip</p>
         <!--The title attribute specifies extra information about an element.-->
         <p style="font-family:verdana;"></p>
         <!--The font-family property specifies the font for an element.-->
@@ -52,31 +54,40 @@
             <!--Related Attributes are: reversed, start, type-->    
             <li></li>
         </ol>
-        <img src="./"  alt=""  width="" height="" float=""/>
+        <img src="./"  alt=""  width="" height="" style="float:right"/>
         <!--always  use  ./  to give direction a pic in a previouse folder and ../ to give direction to the root.-->
         <!--The src attribute specifies the path to the image-->
         <!--The alt attribute specifies an alternate text for an image-->
         <!--The width and height attributes specifies the width and height of an image-->
         <!--The width, height, and style attributes are all valid in HTML.
         However, we suggest using the style attribute. It prevents styles sheets from changing the size of images-->
-        <!--The float attribute specifies whether or not a box (an element) should float to right, left ,.... a text.-->
+        <!--The float prefix specifies whether or not a box (an element) should float to right, left ,.... a text.-->
         <br />
         <!--The <br> tag inserts a single line break as a void element.-->
-        <table border="">
+        <table border="" align="">
+            <!--The <table> tag defines an HTML table.-->
+            <!--The border attribute specifies the width of the border around a table.-->
+            <!--The align attribute specifies the alignment of a table according to surrounding text.-->
             <thead>
                 <!--The <thead> tag is used to group header content in an HTML table.-->
                 <tr>
                     <!--The <tr> tag defines a row in an HTML table.-->
+                    <th style="padding:5px"></th>
+                    <!--The <th> tag defines a header cell in an HTML table.-->
+                    <!--The padding property sets the padding (space) between the text and the border of an element. We can use  -left  -right  -top  -bottom  prefixes.-->
                     <th colspan="2"></th>
                     <!--The <th> tag defines a header cell in an HTML table.-->
                     <!--The colspan attribute defines the number of columns a cell should span.-->
                 </tr>
+            </thead>
+            <tbody>
+                <!--The <tbody> tag is used to group the body content in an HTML table.-->
                 <tr>   
                     <td rowspan="3"></td>
                     <!--The <td> tag defines a standard cell in an HTML table.-->
                     <!--The rowspan attribute specifies the number of rows a cell should span.-->
                 </tr>
-            </thead>
+            </tbody>
         </table>
         <b></b>
     </body>
