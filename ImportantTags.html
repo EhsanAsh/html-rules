@@ -1,5 +1,6 @@
 <!--Important Tags-->
 <!--All Links related to Element, Attribute, Language and Color References are in the Notebook-->
+<!--we can install emmet extension, and it helps us with shortening cods. check the emmet documentation-->
 <!doctype html>
 <!--Declaration of the document type.-->
 <html lang="en">
@@ -25,8 +26,20 @@
 
     <body>
         <!--Everything Displays, comes from this section.-->
-    <header>
-        <!--The <header> tag defines a header for a document or a section.-->
+        <div class="poster">
+                <!--The <div> tag defines a division or a section in an HTML document.-->
+                <!--Div is generic block container for flow content that by itself does not represent anything.-->
+                <!--Content Division Element-->
+                <!--Somehow it's like an invisible box , which groups different elements that we want to have same styles-->
+        </div>  
+    <main>
+        <!--The <main> tag specifies the main content of a document.-->
+ 
+        <span>
+            <!--The <span> tag is used to group inline-elements in a document. It's a Generic Inline Container.-->
+            <!--The <span> tag provides no visual change by itself.-->
+            <!--The <span> tag provides a way to add a hook to a part of a text or a part of a document.-->
+        </span>    
         <h1 style="font-size:60px;"></h1>
         <h2 style="border:2px solid Tomato;"></h2>
         <!--The <h1> to <h6> tags are used to define HTML headings.-->
@@ -34,19 +47,53 @@
         <!--The border property is a shorthand property for: border-width, border-style, border-color.-->
         <h2 style="font-weight: bold;"></h2>
         <!--The font-weight property sets how thick or thin characters in text should be displayed.-->
+        This is  <sub>Subscript</sub>Text
+        <!--The <sub> tag defines subscript text.Like H2O-->
+        This is <sup>Superscript </sup> text
+        <!--The <sup> tag defines superscript text.-->
+    <header>
+        <!--The <header> tag defines a header for a document or a section.-->
+        <!--The <header> element should contain introductory content, such as:-->
+            <!--heading(s)-->
+            <!--logo-->
+            <!--authorship information... and we can use header and footer anywhere that is needed.-->
+        <nav>
+            <!--The <nav> tag defines a set of navigation links.-->
+                <ol>
+                    <li><a href="about.html">About</a></li>
+                </ol>
+        </nav>
+           <!--**Semantic Markup:** It means, Meaningful Markup. We can use div every where we want, but it would be hard for others and also a browser to navigate and find different sections. Instead if we use elements like main, header, footer, nav.... we can groupe different parts that we want and also it would be readable and vavigatable. -->
 
+        <section>
+            <!--The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.-->
+        </section>
     </header>
-    <main>
-        <!--The <main> tag specifies the main content of a document.-->
+        <article>
+            <!--The <article> tag specifies independent, self-contained content.-->
+            <!--An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.-->
+            <!--Potential sources for the <article> element:-->
+                <!--Forum post-->
+                <!--Blog post-->
+                <!--News story-->
+                <!--Comment-->
+        </article>
+        <p>&copy; &#169; </p>
+        <!--We can use character entities. there is a website for it. This one is for copy right sign-->
+        <figure>
+            <!--The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.-->
+        </figure>
+        <time datetime="2020-01-01">
+            <!--The <time> tag defines a human-readable date/time.-->
+            <!--This element can also be used to encode dates and times in a machine-readable way so that user agents can offer to add birthday reminders or scheduled events to the user's calendar, and search engines can produce smarter search results.-->
+            <!--The datetime attribute specifies the date and time.-->
+        </time>
         <p class="" id="" draggable=""></p>
         <!--The <p> tag defines a paragraph.-->
         <!--The class attribute specifies one or more classnames for an element.-->
         <!--The id attribute specifies a unique id for an HTML element.-->
         <!--The draggable attribute specifies whether an element is draggable or not..-->
         <p>This is <span class="the-best">the best</span>web page</p>
-        <!--The <span> tag is used to group inline-elements in a document.-->
-        <!--The <span> tag provides no visual change by itself.-->
-
         <p style=" color:bisque;"></p>
         <!--The color property specifies the color of text.-->
         <p style="background-color: bisque;"></p>
@@ -62,6 +109,8 @@
         <pre></pre>
         <!--The <pre> tag defines preformatted text.The text inside a
         <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.-->
+        <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+        <!--The <button> tag defines a clickable button.-->    
         <a href="https://google.com">Hey There!</a>
         <!--href attribute specifies the URL of the page the link goes to. The link is the target.-->
         <!--example above is using an absolute URL (a full web address) in the href attribute.
@@ -144,21 +193,10 @@
         <!--The <del> tag defines text that has been deleted from a document.-->
         <ins></ins>
         <!--The <ins> tag defines a text that has been inserted into a document.-->
-       This is  <sub>Subscript</sub>Text
-        <!--The <sub> tag defines subscript text.Like H2O-->
-        <br/>
-        <br/>
-      This is <sup>Superscript </sup> text
-        <!--The <sup> tag defines superscript text.-->
-        <br/>
         <br/>
         <q>Hello World!</q>
         <!--The <q> tag defines a short quotation.-->
-        <div class="poster"></div>
-            <!--The <div> tag defines a division or a section in an HTML document.-->
-                <!--Content Division Element-->
-                <!--Somehow it's like an invisible box , which groups different elements that we want to have same styles-->
-            </main>
+        
         <footer>
             <!--The <footer> tag defines a footer for a document or section.-->
             <!--The <footer> element should contain information about its containing element.-->
@@ -175,6 +213,7 @@
                     <!--The <address> tag defines the contact information for the author/owner of a document or an article.-->
                 </address>
         </footer>
+    </main>
             
     </body>
 
