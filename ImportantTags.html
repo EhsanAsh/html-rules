@@ -99,8 +99,7 @@
 
         <!--***************Html's Attributes which we use their value as CSS Selector***************-->
 
-        <section class="" id="">
-        </section>
+        <section class="" id=""></section>
 
         <!--**************************Anchor Element*************************-->
 
@@ -353,21 +352,15 @@
 
             placeholder: Provides a hint that describes the expected value of an input field. It gets displayed in the input field before the user enters a value.
 
-            disabled: When present, it specifies that an input field should be disabled. A disabled input field is unclickable and unusable.
-
             readonly: When present, it specifies that an input field is read-only (cannot be changed).
 
             required: Specifies that an input field must be filled out before submitting the form.
-
-            autofocus: When present, it specifies that an input field should automatically get focus when the page loads.
 
             maxlength: Specifies the maximum number of characters that can be entered in an input field.
 
             min and max: Specifies the minimum and maximum values for an input field. Useful for number, date, time, datetime-local, month, week, and range input types.
 
             step: Specifies the legal number intervals for an input field. Useful for number, date, time, datetime-local, month, week, and range input types.
-
-            pattern: Specifies a regular expression against which the input field's value is checked. It's used for form validation.
 
             <input type="number" placeholder="" name="num" min="0" max="1000" step="10" />
 
@@ -418,7 +411,7 @@
 
         <button>Not inside form, and does nothing</button>
 
-        <!--***************Forms-Select***************-->
+        <!--***************Search Engine***************-->
 
         <form action="https://www.google.ca/search">
             <!--the action here is a search engine and will send our request to google search-->
@@ -443,6 +436,9 @@
             <!--Use radio buttons for exclusive selection if you think that the user needs to see all available options side-by-side.-->
 
             <button>Submit</button>
+
+            <!--***************Forms-Select***************-->
+
             <p>
                 <lable for="meal">Please select an Entree</lable>
                 <select name="meal" id="meal">
@@ -468,6 +464,9 @@
                 <!--The value attribute specifies the default value-->
 
             </p>
+
+            <!--*******************Textarea*******************-->
+
             <p>
                 <label for="request">Any special Requests?</label>
                 <hr />
