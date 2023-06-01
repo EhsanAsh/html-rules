@@ -2,6 +2,8 @@
 <!--All Links related to Element, Attribute, Language and Color References are in the Notebook-->
 <!--we can install emmet extension, and it helps us with shortening cods. check the emmet documentation-->
 
+<!-- Type ! then hit tab and a complete boilerpoint will show up.-->
+
 <!doctype html>
 <!--Declaration of the document type.-->
 
@@ -20,7 +22,7 @@
     <!--The description meta tag gives search engines a summary of what the page is about.-->
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <!--The keywords meta tag gives search engines a list of keywords that are relevant to the webpage.-->
-    <meta name="author" content="John Doe" />
+    <meta name="author" content="EhsanAsh" />
     <!--The author meta tag gives search engines the name of the author of the webpage.-->
     <link rel="stylesheet" href="../1-CSS/Codes.css" />
     <!--The <link> tag defines a link between a document and an external resource.-->
@@ -33,15 +35,26 @@
     <!--The <body> tag defines the document's body.-->
     <!--Everything Displays, comes from this section.-->
 
-    <div class="poster">
-        <!--The <div> tag defines a division or a section in an HTML document.-->
-        <!--Div is generic block container for flow content that by itself does not represent anything.-->
-        <!--Content Division Element-->
-        <!--Somehow it's like an invisible box , which groups different elements that we want to have same styles-->
-    </div>
-
     <main>
         <!--The <main> tag specifies the main content of a document.-->
+
+        <!--******************Most common tags and their related attributes and values******************-->
+
+        <h1></h1>
+        <h2 title=""></h2>
+        <!--The <h1> to <h6> tags are used to define HTML headings.-->
+        <!--The <h1> defines the most important heading.-->
+        <!--The <h6> defines the least important heading.-->
+        <!--The title attribute specifies extra information about an element.-->
+
+        <p id="" class="" draggable="">&copy; &#169; </p>
+        <!--We can use character entities. there is a website for it. This one is for copy right sign-->
+        <!--The <p> tag defines a paragraph.-->
+        <!--The class attribute specifies one or more classnames for an element.-->
+        <!--The id attribute specifies a unique id for an HTML element.-->
+        <!--The draggable attribute specifies whether an element is draggable or not..-->
+
+        <p>This is <span class="the-best">the best</span>web page</p>
 
         <span>
             <!--The <span> tag is used to group inline-elements in a document. It's a Generic Inline Container.-->
@@ -49,163 +62,16 @@
             <!--The <span> tag provides a way to add a hook to a part of a text or a part of a document.-->
         </span>
 
-        <h1 style="font-size:60px;"></h1>
-        <h2 style="border:2px solid Tomato;"></h2>
-        <!--The <h1> to <h6> tags are used to define HTML headings.-->
-        <!--The style attribute specifies an inline style for an element.-->
-        <!--The border property is a shorthand property for: border-width, border-style, border-color.-->
-        <h2 style="font-weight: bold;"></h2>
-        <!--The font-weight property sets how thick or thin characters in text should be displayed.-->
+        <hr />
+        <!--The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic).Horizontal Rules.Void element.-->
+
+        <br />
+        <!--The <br> tag inserts a single line break as a void element.-->
 
         This is <sub>Subscript</sub>Text
         <!--The <sub> tag defines subscript text.Like H2O-->
         This is <sup>Superscript </sup> text
         <!--The <sup> tag defines superscript text.-->
-
-        <header>
-            <!--The <header> tag defines a header for a document or a section.-->
-            <!--The <header> element should contain introductory content, such as:-->
-            <!--heading(s)-->
-            <!--logo-->
-            <!--authorship information... and we can use header and footer anywhere that is needed.-->
-
-            <nav>
-                <!--The <nav> tag defines a set of navigation links.-->
-                <ol>
-                    <li><a href="about.html">About</a></li>
-                </ol>
-            </nav>
-            <!--**Semantic Markup:** It means, Meaningful Markup. We can use div every where we want, but it would be hard for others and also a browser to navigate and find different sections. Instead if we use elements like main, header, footer, nav.... we can groupe different parts that we want and also it would be readable and vavigatable. -->
-
-            <section>
-                <!--The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.-->
-            </section>
-
-        </header>
-
-        <article>
-            <!--The <article> tag specifies independent, self-contained content.-->
-            <!--An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.-->
-            <!--Potential sources for the <article> element:-->
-            <!--Forum post-->
-            <!--Blog post-->
-            <!--News story-->
-            <!--Comment-->
-        </article>
-
-        <p>&copy; &#169; </p>
-        <!--We can use character entities. there is a website for it. This one is for copy right sign-->
-
-        <figure>
-            <!--The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.-->
-        </figure>
-
-        <time datetime="2020-01-01">
-            <!--The <time> tag defines a human-readable date/time.-->
-            <!--This element can also be used to encode dates and times in a machine-readable way so that user agents can offer to add birthday reminders or scheduled events to the user's calendar, and search engines can produce smarter search results.-->
-            <!--The datetime attribute specifies the date and time.-->
-        </time>
-
-        <p class="" id="" draggable=""></p>
-        <!--The <p> tag defines a paragraph.-->
-        <!--The class attribute specifies one or more classnames for an element.-->
-        <!--The id attribute specifies a unique id for an HTML element.-->
-        <!--The draggable attribute specifies whether an element is draggable or not..-->
-        <p>This is <span class="the-best">the best</span>web page</p>
-        <p style=" color:bisque;"></p>
-        <!--The color property specifies the color of text.-->
-        <p style="background-color: bisque;"></p>
-        <!--The style attribute specifies an inline style for an element.-->
-        <p style="border-color:aliceblue;"></p>
-        <!--The border-color property sets the color of an element's four borders.-->
-        <p title="I'm a Tooltip">Mouse over this paragraph, to display the title attribute as a tooltip</p>
-        <!--The title attribute specifies extra information about an element.-->
-        <p style="font-family:verdana;"></p>
-        <!--The font-family property specifies the font for an element.-->
-        <p style="text-align: end;"></p>
-        <!--The text-align property specifies the horizontal alignment of text in an element.-->
-        <pre></pre>
-        <!--The <pre> tag defines preformatted text.The text inside a
-        <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks.-->
-
-        <button type="button">Click Me!</button>
-        <!--The <button> tag defines a clickable button.-->
-        <!--The type attribute specifies the type of button.-->
-        <!--By default, the type attribute of a <button> tag is submit.-->
-        <!--The type attribute can be changed to reset or button, this way we can have a button that does nothing or a button that resets the form.-->
-
-        <a href="https://google.com">Hey There!</a>
-        <!--href attribute specifies the URL of the page the link goes to. The link is the target.-->
-        <!--example above is using an absolute URL (a full web address) in the href attribute.
-        A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):-->
-        <a draggable="true" title="">This is a link</a>
-        <!--The draggable attribute specifies whether an element is draggable or not.-->
-        <a target="_blank"><img /></a>
-        <!--The target attribute specifies where to open the linked document.It can be: _blank, _self, _top, _parent-->
-        <!--We can use an image as a link inside the anchor attribute-->
-        <a href="mailto:sth@sth.com"></a>
-        <!--The mailto: prefix will open the visitor's default email program with the address in the "to" field filled in.-->
-        <a
-            href="./link to a webpage like about in our website. the other webpage file should be in the same folder or subfolder with the main webpage file."><img /></a>
-
-        <ul>
-            <!--The <ul> tag defines an unordered (bulleted) list.-->
-            <li></li>
-        </ul>
-
-        <hr />
-        <!--The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic).Horizontal Rules.Void element.-->
-
-        <ol type="" start="" reversed="">
-            <!--The <ol> tag defines an ordered list.-->
-            <!--The type attribute specifies the kind of marker to use in the list-->
-            <!--The start attribute specifies the start value of an ordered list-->
-            <!--The reversed attribute specifies that the list order should be descending (9,8,7...)-->
-            <li value=""></li>
-            <!--The <li> tag defines a list item.-->
-            <!--The value attribute specifies the value of an item in a list.-->
-            <!--The value attribute is used differently for different types of lists:-->
-            <!--For ordered lists, the value attribute specifies the number that should be displayed at the start of the list item.-->
-            <!--For unordered lists, the value attribute specifies the bullet style:-->
-            <!--circle - Default. The bullet is a circle-->
-        </ol>
-
-        <img src="./" alt="" width="" height="" style="float:right" />
-        <!--always  use  ./  to give direction a pic in a previouse folder and ../ to give direction to the root.-->
-        <!--The src attribute specifies the path to the image-->
-        <!--The alt attribute specifies an alternate text for an image-->
-        <!--The width and height attributes specifies the width and height of an image-->
-        <!--The width, height, and style attributes are all valid in HTML.
-        However, we suggest using the style attribute. It prevents styles sheets from changing the size of images-->
-        <!--The float prefix specifies whether or not a box (an element) should float to right, left ,.... a text.-->
-        <br />
-        <!--The <br> tag inserts a single line break as a void element.-->
-
-        <table border="" align="">
-            <!--The <table> tag defines an HTML table.-->
-            <!--The border attribute specifies the width of the border around a table.-->
-            <!--The align attribute specifies the alignment of a table according to surrounding text.-->
-            <thead>
-                <!--The <thead> tag is used to group header content in an HTML table.-->
-                <tr>
-                    <!--The <tr> tag defines a row in an HTML table.-->
-                    <th style="padding:5px"></th>
-                    <!--The <th> tag defines a header cell in an HTML table.-->
-                    <!--The padding property sets the padding (space) between the text and the border of an element. We can use  -left  -right  -top  -bottom  prefixes.-->
-                    <th colspan="2"></th>
-                    <!--The <th> tag defines a header cell in an HTML table.-->
-                    <!--The colspan attribute defines the number of columns a cell should span.-->
-                </tr>
-            </thead>
-            <tbody>
-                <!--The <tbody> tag is used to group the body content in an HTML table.-->
-                <tr>
-                    <td rowspan="3"></td>
-                    <!--The <td> tag defines a standard cell in an HTML table.-->
-                    <!--The rowspan attribute specifies the number of rows a cell should span.-->
-                </tr>
-            </tbody>
-        </table>
 
         <b></b>
         <!--The <b> tag specifies bold text without any extra importance.-->
@@ -228,12 +94,186 @@
         <del></del>
         <!--The <del> tag defines text that has been deleted from a document.-->
 
-        <ins></ins>
-        <!--The <ins> tag defines a text that has been inserted into a document.-->
-
-        <br />
         <q>Hello World!</q>
         <!--The <q> tag defines a short quotation.-->
+
+        <!--***************Html's Attributes which we use their value as CSS Selector***************-->
+
+        <section class="" id="">
+        </section>
+
+        <!--**************************Anchor Element*************************-->
+
+        <a href="https://google.com">Hey There!</a>
+        <!--href attribute specifies the URL of the page the link goes to. The link is the target.-->
+        <!--example above is using an absolute URL (a full web address) in the href attribute.
+        A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):-->
+        <a draggable="true" title="">This is a link</a>
+        <!--The draggable attribute specifies whether an element is draggable or not.-->
+        <a target="_blank"><img /></a>
+        <!--The target attribute specifies where to open the linked document.It can be: _blank, _self, _top, _parent-->
+        <!--We can use an image as a link inside the anchor attribute-->
+        <a href="mailto:sth@sth.com"></a>
+        <!--The mailto: prefix will open the visitor's default email program with the address in the "to" field filled in.-->
+        <a
+            href="./link to a webpage like about in our website. the other webpage file should be in the same folder or subfolder with the main webpage file."><img /></a>
+
+        <!--****We can use anchor tag in the middle of a paragraph to link a word to another page.****-->
+
+        <!--**************************Navigation Button*************************-->
+
+        <!--In order to create any navigation button like: about,contact, ... most common way is to use an anchor tag and then style it in css to shape a button--><!--**To create buttons in a form see form section. **-->
+
+        <a href="page1.html" class="nav-button" target="_blank" draggable="false" title="Page">Page 1</a>
+        <a href="page2.html" class="nav-button">Page 2</a>
+        <a href="page3.html" class="nav-button">Page 3</a>
+
+        <style>
+            .nav-button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 20px;
+                cursor: pointer;
+                /*cursor: pointer; is used to change the mouse cursor to a pointer when the mouse moves over an element.*/
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                /*outline: none; is used to remove the outline around a focused element.*/
+                color: #fff;
+                background-color: #4CAF50;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+                /*box-shadow: 0 9px #999; is used to add a shadow effect to the button.*/
+                /*The box-shadow property attaches one or more shadows to an element.*/
+                /*The first value is the horizontal shadow, the second value is the vertical shadow, the third value is the blur distance and the last value is the shadow color.*/
+                margin: 10px;
+            }
+        </style>
+
+        <!--****The 2nd option is to use: <a href=""> <button>Something</button> </a>****-->
+
+        <!--**************************List*************************-->
+
+        <ul>
+            <!--The <ul> tag defines an unordered (bulleted) list.-->
+            <li></li>
+        </ul>
+
+        <ol type="" start="" reversed="">
+            <!--The <ol> tag defines an ordered list.-->
+            <!--The type attribute specifies the kind of marker to use in the list-->
+            <!--The start attribute specifies the start value of an ordered list-->
+            <!--The reversed attribute specifies that the list order should be descending (9,8,7...)-->
+            <li value=""></li>
+            <!--The <li> tag defines a list item.-->
+            <!--The value attribute specifies the value of an item in a list.-->
+            <!--The value attribute is used differently for different types of lists:-->
+            <!--For ordered lists, the value attribute specifies the number that should be displayed at the start of the list item.-->
+            <!--The value attribute, used with the <li> tag, allows you to specify a custom value for an individual list item in an ordered list. This can be useful if you need to override the default numbering sequence for a specific item.-->
+            <!--For unordered lists, the value attribute specifies the bullet style:-->
+            <!--circle - Default. The bullet is a circle-->
+        </ol>
+
+        <!--**************************Image*************************-->
+
+        <img src="./" alt="" />
+        <!--always  use  ./  to give direction a pic in a previouse folder and ../ to give direction to the root.-->
+        <!--The src attribute specifies the path to the image-->
+        <!--The alt attribute specifies an alternate text for an image-->
+
+        <!--**************************Table*************************-->
+
+        <table>
+            <!--The <table> tag defines an HTML table.-->
+            <thead>
+                <!--The <thead> tag is used to group header content in an HTML table.-->
+                <tr>
+                    <!--The <tr> tag defines a row in an HTML table.-->
+                    <th></th>
+                    <!--The <th> tag defines a header cell in an HTML table.-->
+                    <th colspan="2"></th>
+                    <!--The <th> tag defines a header cell in an HTML table.-->
+                    <!--The colspan attribute defines the number of columns a cell should span.-->
+                </tr>
+            </thead>
+            <tbody>
+                <!--The <tbody> tag is used to group the body content in an HTML table.-->
+                <tr>
+                    <td rowspan="3"></td>
+                    <!--The <td> tag defines a standard cell in an HTML table.-->
+                    <!--The rowspan attribute specifies the number of rows a cell should span.-->
+                </tr>
+            </tbody>
+        </table>
+
+        <!--******************Dividing & Grouping******************-->
+
+        <header>
+            <!--The <header> tag defines a header for a document or a section.-->
+            <!--The <header> element should contain introductory content, such as:-->
+            <!--heading(s)-->
+            <!--logo-->
+            <!--authorship information... and we can use header and footer anywhere that is needed.-->
+
+            <nav>
+                <!--The <nav> tag defines a set of navigation links.-->
+                <ol>
+                    <li><a href="about.html">About</a></li>
+                </ol>
+            </nav>
+            <!--**Semantic Markup:** It means, Meaningful Markup. We can use div every where we want, but it would be hard for others and also a browser to navigate and find different sections. Instead if we use elements like main, header, footer, nav.... we can groupe different parts that we want and also it would be readable and vavigatable. -->
+
+            <section>
+                <!--The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.-->
+            </section>
+
+        </header>
+
+        <div class="poster">
+            <!--The <div> tag defines a division or a section in an HTML document.-->
+            <!--Div is generic block container for flow content that by itself does not represent anything.-->
+            <!--Content Division Element-->
+            <!--Somehow it's like an invisible box , which groups different elements that we want to have same styles-->
+        </div>
+
+        <article>
+            <!--The <article> tag specifies independent, self-contained content.-->
+            <!--An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.-->
+            <!--Potential sources for the <article> element:-->
+            <!--Forum post-->
+            <!--Blog post-->
+            <!--News story-->
+            <!--Comment-->
+        </article>
+
+        <figure>
+            <!--The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.-->
+        </figure>
+        <footer>
+            <!--The <footer> tag defines a footer for a document or section.-->
+            <!--The <footer> element should contain information about its containing element.-->
+            <!--Usually, the <footer> element contains information like:-->
+            <!--authorship information-->
+            <!--contact information-->
+            <!--sitemap-->
+            <!--back to top links-->
+            <!--related documents-->
+            <div class="footer-bottom">
+                <p>&copy; 2023 Example Website. All rights reserved. | Designed by John Doe</p>
+            </div>
+            <address>
+                <!--The <address> tag defines the contact information for the author/owner of a document or an article.-->
+            </address>
+        </footer>
+
+        <time datetime="2020-01-01">
+            <!--The <time> tag defines a human-readable date/time.-->
+            <!--This element can also be used to encode dates and times in a machine-readable way so that user agents can offer to add birthday reminders or scheduled events to the user's calendar, and search engines can produce smarter search results.-->
+            <!--The datetime attribute specifies the date and time.-->
+        </time>
+
+        <!--**************************Form*************************-->
 
         <form action="" method="">
             <!--The <form> tag is used to create an HTML form for user input.-->
@@ -241,15 +281,98 @@
             <!--method attribute specifies the HTTP method (GET or POST) to be used when submitting the form-data.-->
             <!--The GET method is the method used by the browser to ask the server to send back a given resource.-->
             <!--The POST method is the method the browser uses to talk to the server when asking for a response that takes into account the data provided in the body of the HTTP request.-->
-            <input type="text" placeholder="">
+            <input type="" placeholder="">
             <!--The <input> tag specifies an input field where the user can enter data.-->
             <!--The type attribute specifies the type of <input> element to display.-->
             <!--The placeholder attribute specifies a short hint that describes the expected value of an input field.-->
-            <input type="password" placeholder="">
-            <input type="number" placeholder="" name="num" min="0" max="1000" step="3">
-            <input type="color" />
-            <input type="date" />
-            <input type="time" />
+
+            <!--***************Form Controls***************-->
+
+            Form controls are the various HTML elements that are used within a <form> to collect user input. Some of the
+                main form controls include:
+
+                <input>: The <input> element is the most commonly used form control. It can be displayed in several
+                ways, depending on the type attribute. Some common types include:
+
+                text: For text input.
+                password: For password input.
+                submit: For a button that submits the form.
+                radio: For radio buttons.
+                color: For color inputs.
+                checkbox: For checkboxes.
+                file: For file uploads.
+                email: For email address input.
+                url: For URL input.
+                date: For date input.
+                number: For numeric input.
+                range: For a numeric slider control.
+                search: For search input.
+                image: For image buttons.
+                hidden: A hidden input field that the user cannot see or interact with but can be used to store data to
+                be sent with the form.
+
+                <textarea>: The <textarea> element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
+                
+                <button>: The <button> element represents a clickable button, used to submit forms or anywhere in a document for accessible, standard button functionality.
+                
+                <select>: The <select> element represents a control that provides a menu of options. It works in conjunction with the <option> element which specifies the available options within the select menu.
+                
+                <label>: The <label> element represents a caption for an item in a user interface. It can be associated with a specific form control, known as the label element's labeled control, either using the for attribute, or by placing the form control within the label element itself.
+
+            <!--***************Name & Value***************-->
+
+            in the context of form controls in HTML (like <input>, <button>, <select>, etc.), the name and value attributes are often used together.
+
+                The name attribute defines the name for the form control and is used in the HTTP request sent by your browser to the server to identify the different fields of the form.
+                The value attribute defines the default value or the value a user enters (for an <input> tag) or selects (for a <select> tag). For a <button> tag, it defines the value associated with the button's name when it's submitted with the form data.
+                When a form is submitted, the form data that gets sent to the server includes pairs of names and values. The names are specified by the name attribute and the values are given by the value attribute.
+                
+                For example, if you have an <input> field like this:
+                <input type="text" name="username" value="DefaultUsername">
+                When the form is submitted, the form data sent to the server would include username=DefaultUsername (or whatever the user has entered into the input field).
+
+                However, while these attributes are typically used in forms, they're not strictly required for all form elements. For example, you might have a <button> or <input> element that's used for client-side interactivity (e.g., with JavaScript) rather than for sending data to a server. In these cases, you might not need the name and value attributes.
+
+                But for form controls that you want to include in the form data sent to the server, it's generally a good practice to include both the name and value attributes.
+                    
+                Here's an example form:
+                <form action="/action_page.php" method="post">
+                    First name: <input type="text" name="fname"><br>
+                    Last name: <input type="text" name="lname"><br>
+                    <input type="submit" value="Submit">
+                  </form>
+                  In this example, the fname and lname <input> elements both have name attributes but no value attributes, because the values will be whatever the user types into these fields. The <input type="submit"> element has a value attribute, which specifies the text that will appear on the submit button. The name attribute isn't necessary for this submit button because it doesn't need to send any data when the form is submitted.                  
+
+            <!--***************The most common input attributes***************-->
+
+            type: Specifies the type of <input> element to display. It could be text, password, submit, radio, checkbox, email, date, file, hidden, number, search, etc.
+
+            value: Specifies the initial value for the input field.
+
+            name: Specifies the name for the input element and is used to reference the form-data after a form is submitted.
+
+            placeholder: Provides a hint that describes the expected value of an input field. It gets displayed in the input field before the user enters a value.
+
+            disabled: When present, it specifies that an input field should be disabled. A disabled input field is unclickable and unusable.
+
+            readonly: When present, it specifies that an input field is read-only (cannot be changed).
+
+            required: Specifies that an input field must be filled out before submitting the form.
+
+            autofocus: When present, it specifies that an input field should automatically get focus when the page loads.
+
+            maxlength: Specifies the maximum number of characters that can be entered in an input field.
+
+            min and max: Specifies the minimum and maximum values for an input field. Useful for number, date, time, datetime-local, month, week, and range input types.
+
+            step: Specifies the legal number intervals for an input field. Useful for number, date, time, datetime-local, month, week, and range input types.
+
+            pattern: Specifies a regular expression against which the input field's value is checked. It's used for form validation.
+
+            <input type="number" placeholder="" name="num" min="0" max="1000" step="10" />
+
+            <!--***************Different types descriptions***************-->
+            
             <div>
                 <label for="">A related text</label>
                 <!--The <label> tag defines a label for a specific <input> element.-->
@@ -271,18 +394,31 @@
             <!--The <button> tag defines a clickable button.-->
             <!--Inside a <button> element you can put content, like text or images. This is the difference between this element and buttons created with the <input> element.-->
             <!--**By default, button type is submit.-->
-            <button type="button">Click Me!</button>
-            <!--If we mention the type, it will not submit the form. Unless we want to-->
 
-            <input type="button" />
-            <input type="image" />
-            <input type="email" />
-            <input type="url" />
-            <input type="tel" />
-            <input type="search" />
+            <!--***************Forms-Button***************-->
+
+            <button type="button" name="" value="" form="">Click Me!</button>
+            <!--If we mention the type, it will not submit the form. Unless we want to-->
+            <!--The <button> tag defines a clickable button.-->
+            <!--The type attribute specifies the type of button.-->
+            <!--By default, the type attribute of a <button> tag is submit.-->
+            <!--The type attribute can be changed to reset or button, this way we can have a button that does nothing or a button that resets the form.-->
+            <!--The name attribute specifies a name for the button.-->
+            <!--The value attribute specifies an initial value for the button.-->
+            <!--The form attribute specifies one or more forms the button belongs to. The form attribute of the <button> tag is used to associate the <button> element to a <form> by referencing the id of the form.-->
+
+            <form action="/action_page.php" method="get">
+                <input type="text" name="fname">
+                <button type="submit" name="response" value="like">Like</button>
+                <button type="submit" name="response" value="dislike">Dislike</button>
+            </form>
+            <!--The form above will send the data to the action page and the action page will show the response value.-->
+            <!--In this example, if the user enters their name and clicks "Like", the form data sent to the server would be fname=enteredName&response=like. If they click "Dislike", the form data would be fname=enteredName&response=dislike.The server-side script can then process this data knowing not just that the form was submitted, but also which button was clicked by checking the response value.-->
         </form>
 
         <button>Not inside form, and does nothing</button>
+
+        <!--***************Forms-Select***************-->
 
         <form action="https://www.google.ca/search">
             <!--the action here is a search engine and will send our request to google search-->
@@ -340,49 +476,32 @@
                 <!--The <textarea> tag defines a multi-line text input control.-->
                 <!--The rows attribute specifies the visible number of lines in a text area.-->
                 <!--The cols attribute specifies the visible width of a text area.-->
-            </p>
+                </p>
 
-            <!--********Validation********-->
-            <!--Min and Max work as validations for any kind of numbers like regular num, tel, date or range and...-->
-            <lable for="first">Enter Firsname</lable>
-            <input type="text" name="first" id="first" required />
-            <!--The required attribute is a boolean attribute.-->
-            <!--When present, it specifies that an input field must be filled out before submitting the form.-->
-            <p>
-                <lable for="username">Enter Username</lable>
-                <input type="username" name="username" id="username" placeholder="Username" minlength="5" maxlength="12"
-                    required />
-                <!--The minlength attribute specifies the minimum number of characters allowed in an <input> element.-->
-                <!--The maxlength attribute specifies the maximum number of characters allowed in an <input> element.-->
-            </p>
-            <p>
-                <label for="email">Enter Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" required />
-                <!--The <input type="email"> is used for input fields that should contain an e-mail address.It has some kind of internal pattern-->
-            </p>
-            <p>
-                <input type="url" name="url" id="url" placeholder="Enter a url" required />
-                <!--The <input type="url"> is used for input fields that should contain a URL address.-->
-            </p>
+                <!--*******************Validation*********************-->
+                <!--Min and Max work as validations for any kind of numbers like regular num, tel, date or range and...-->
+                <lable for="first">Enter Firsname</lable>
+                <input type="text" name="first" id="first" required />
+                <!--The required attribute is a boolean attribute.-->
+                <!--When present, it specifies that an input field must be filled out before submitting the form.-->
+                <p>
+                    <lable for="username">Enter Username</lable>
+                    <input type="username" name="username" id="username" placeholder="Username" minlength="5"
+                        maxlength="12" required />
+                    <!--The minlength attribute specifies the minimum number of characters allowed in an <input> element.-->
+                    <!--The maxlength attribute specifies the maximum number of characters allowed in an <input> element.-->
+                </p>
+                <p>
+                    <label for="email">Enter Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                    <!--The <input type="email"> is used for input fields that should contain an e-mail address.It has some kind of internal pattern-->
+                </p>
+                <p>
+                    <input type="url" name="url" id="url" placeholder="Enter a url" required />
+                    <!--The <input type="url"> is used for input fields that should contain a URL address.-->
+                </p>
 
-        </form>
-
-        <footer>
-            <!--The <footer> tag defines a footer for a document or section.-->
-            <!--The <footer> element should contain information about its containing element.-->
-            <!--Usually, the <footer> element contains information like:-->
-            <!--authorship information-->
-            <!--contact information-->
-            <!--sitemap-->
-            <!--back to top links-->
-            <!--related documents-->
-            <div class="footer-bottom">
-                <p>&copy; 2023 Example Website. All rights reserved. | Designed by John Doe</p>
-            </div>
-            <address>
-                <!--The <address> tag defines the contact information for the author/owner of a document or an article.-->
-            </address>
-        </footer>
+            </form>
 
     </main>
 
